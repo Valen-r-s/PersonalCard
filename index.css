@@ -12,8 +12,8 @@ h1 {
   margin-bottom: 0px;
 }
 .card {
-  width: 500px;
-  height: 450px;
+  width: 650px;
+  height: 460px;
   border-radius: 20px;
   background: snow;
   box-shadow: 5px 5px 0px #696969, -5px -5px 0px #ffffff;
@@ -59,12 +59,13 @@ a:hover {
   width: 200px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .card {
       width: 90%;
       height: auto;
       padding: 20px;
       text-align: center;
+      flex-wrap: wrap;
     }
 
     .contact {
