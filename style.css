@@ -25,10 +25,12 @@ body {
 header {
   height: 100px;
   width: 100%;
+  padding: 8px 0;
   background-color: var(--grey-blue);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,6 +39,31 @@ header h1 {
   color: var(--titles-color);
   margin: 0;
   font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background: var(--steel-blue);
+  color: var(--snow-white);
 }
 
 footer {
